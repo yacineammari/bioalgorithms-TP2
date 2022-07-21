@@ -312,25 +312,3 @@ def grphe(ahom):
     # plt.show()
     plt.savefig(f'{"".join(random.sample(string.ascii_lowercase, 8))}.png', bbox_inches='tight')
 
-
-dictaho = aho_parcour('CAGTAACCGTA', ['GTA', 'AGT', 'AAC'])
-print(str(dictaho))
-
-dictaho = aho_parcour('TATATTAATT', ['AT', 'TATT', 'TT'])
-print(str(dictaho))
-
-dictaho = aho_parcour('ASDFASGERGFERGF', ['DFASGER', 'DFA', 'GF'])
-print(str(dictaho))
-
-
-
-dictaho = init_aho_autom(['GTA', 'AGT', 'AAC'])
-grphe(dictaho)
-
-
-dictaho = init_aho_autom(['AT', 'TATT', 'TT'])
-grphe(dictaho)
-
-
-dictaho = init_aho_autom(['DFASGER', 'DFA', 'GF'])
-grphe(dictaho)
